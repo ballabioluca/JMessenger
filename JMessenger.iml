@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.formdev:flatlaf:3.4.1" level="project" />
+    <orderEntry type="library" name="Maven: com.formdev:flatlaf-extras:3.4.1" level="project" />
   </component>
 </module>

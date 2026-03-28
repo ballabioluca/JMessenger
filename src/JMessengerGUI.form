@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="JMessengerGUI">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="842" height="550"/>
+    </constraints>
+    <properties>
+      <minimumSize width="700" height="550"/>
+      <preferredSize width="800" height="650"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <splitpane id="a7d5f">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <continuousLayout value="true"/>
+          <dividerLocation value="500"/>
+          <resizeWeight value="1.0"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="b3f0c" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <scrollpane id="c8b8f">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="3b845" class="javax.swing.JTextArea" binding="messageArea">
+                    <constraints/>
+                    <properties>
+                      <editable value="false"/>
+                      <margin top="10" left="10" bottom="10" right="10"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <grid id="e759f" layout-manager="BorderLayout" hgap="10" vgap="0">
+                <constraints border-constraint="South"/>
+                <properties/>
+                <border type="empty">
+                  <top value="10" left="10" bottom="10" right="10"/>
+                </border>
+                <children>
+                  <component id="f8c3a" class="javax.swing.JTextField" binding="messageField">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <toolTipText value="Scrivi un messaggio..."/>
+                    </properties>
+                  </component>
+                  <component id="a91a" class="javax.swing.JButton" binding="sendButton">
+                    <constraints border-constraint="East"/>
+                    <properties>
+                      <text value="Invia"/>
+                      <toolTipText value="Invia Messaggio"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="d8a2b" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="10">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="f9e8d" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="5" vgap="5">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="etched" title="Contatti in Gruppo"/>
+                <children>
+                  <scrollpane id="d3a5e">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="c1e5a" class="javax.swing.JList" binding="contactList">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                  <component id="e2a9b" class="javax.swing.JTextField" binding="addIpField">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="Inserisci un indirizzo IP"/>
+                    </properties>
+                  </component>
+                  <component id="c6a1f" class="javax.swing.JButton" binding="addIpButton">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Aggiungi"/>
+                      <toolTipText value="Aggiungi IP al Gruppo"/>
+                    </properties>
+                  </component>
+                  <component id="d3b4a" class="javax.swing.JButton" binding="removeSelectedButton">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Rimuovi"/>
+                      <toolTipText value="Rimuovi Contatto Selezionato"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="c0b8e" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="5" vgap="5">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="etched" title="Azioni di Rete"/>
+                <children>
+                  <component id="b1a5" class="javax.swing.JButton" binding="scanButton">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Cerca Utenti"/>
+                      <toolTipText value="Cerca Utenti sulla Rete"/>
+                    </properties>
+                  </component>
+                  <component id="f5a28" class="javax.swing.JButton" binding="clearGroupButton">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Svuota Gruppo"/>
+                      <toolTipText value="Svuota Gruppo"/>
+                    </properties>
+                  </component>
+                  <component id="a4b3f" class="javax.swing.JButton" binding="autoGroupButton">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Gruppo Automatico"/>
+                      <toolTipText value="Cerca e aggiungi automaticamente tutti gli utenti al tuo gruppo"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="a0b8f" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="5" vgap="0">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="etched" title="Messaggio Diretto (1-to-1)"/>
+                <children>
+                  <component id="e5a2f" class="javax.swing.JButton" binding="setTargetButton">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Imposta Target"/>
+                      <toolTipText value="Imposta come Target 1-to-1"/>
+                    </properties>
+                  </component>
+                  <component id="targetIpField" class="javax.swing.JTextField" binding="targetIpField">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="Imposta un IP per la conversazione 1-to-1"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </splitpane>
+      <grid id="4d723" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="etched"/>
+        <children>
+          <component id="e50d7" class="javax.swing.JLabel" binding="statusLabel">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <text value="IP: 127.0.0.1 | Port: 5000"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
